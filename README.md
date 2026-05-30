@@ -17,6 +17,12 @@ Published page:
 
 https://redaemor.github.io/QueryForge-Site/
 
+## Tester Readme
+
+Tester guidance for the Google Play closed test is published at:
+
+https://redaemor.github.io/QueryForge-Site/tester-readme.html
+
 ## Contact
 
 For privacy questions, contact:

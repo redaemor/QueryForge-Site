@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quote Forge Tester Readme</title>
+    <meta
+      name="description"
+      content="Tester guidance for Quote Forge closed testing on Google Play."
+    >
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #f7f7f4;
+        --card: #ffffff;
+        --text: #1f2933;
+        --muted: #52606d;
+        --border: #d9e2ec;
+        --accent: #2563eb;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #101418;
+          --card: #171f27;
+          --text: #f5f7fa;
+          --muted: #cbd2d9;
+          --border: #323f4b;
+          --accent: #60a5fa;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        line-height: 1.6;
+      }
+
+      main {
+        width: min(920px, calc(100% - 32px));
+        margin: 48px auto;
+        padding: clamp(24px, 5vw, 56px);
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 24px;
+        box-shadow: 0 16px 48px rgb(15 23 42 / 0.08);
+      }
+
+      h1,
+      h2 {
+        line-height: 1.2;
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-size: clamp(2rem, 5vw, 3.5rem);
+      }
+
+      h2 {
+        margin-top: 36px;
+        font-size: 1.35rem;
+      }
+
+      p,
+      li {
+        color: var(--muted);
+      }
+
+      strong,
+      code {
+        color: var(--text);
+      }
+
+      a {
+        color: var(--accent);
+      }
+
+      pre {
+        overflow-x: auto;
+        padding: 16px;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        background: color-mix(in srgb, var(--border), transparent 72%);
+      }
+
+      code {
+        color: var(--text);
+        font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+      }
+
+      .meta {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .summary {
+        margin-top: 28px;
+        padding: 18px 20px;
+        border-left: 4px solid var(--accent);
+        border-radius: 12px;
+        background: color-mix(in srgb, var(--accent), transparent 90%);
+      }
+
+      .nav {
+        margin-top: 20px;
+      }
+
+      @media (max-width: 720px) {
+        main {
+          margin: 16px auto;
+          border-radius: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Tester Readme</h1>
+      <p class="meta"><strong>App:</strong> Quote Forge</p>
+      <p class="meta"><strong>Testing:</strong> Google Play closed testing</p>
+      <p class="nav"><a href="./">Privacy Policy</a></p>
+
+      <section class="summary" aria-labelledby="intro">
+        <h2 id="intro">Thank You</h2>
+        <p>
+          Thank you for considering testing this app. Google Play requires new developers
+          to undergo closed testing before their app can be published for the first time.
+          This entails having a minimum of 12 people testing the app over 14 days. If you
+          are interested, I will send the install steps separately.
+        </p>
+      </section>
+
+      <section aria-labelledby="overview">
+        <h2 id="overview">Overview</h2>
+        <p>
+          This app is designed with self-employed, small business builders, plumbers, and
+          similar tradespeople in mind. The general idea is:
+        </p>
+        <ul>
+          <li>A call, email, or social media DM comes through asking for work.</li>
+          <li>The user fills out the details of the customer with a new enquiry.</li>
+          <li>After the enquiry has been filled out with the requirements, the user compiles a quote accordingly and saves it.</li>
+          <li>The most notable part is that when the quote is saved the user will be reminded to follow up with the customer after X days. This is the easiest part for small businesses to miss.</li>
+          <li>Optionally, after the end user has been reminded about the quote after <em>N</em> times, a discount can be factored into the quote automatically. The discount amount and quantity of reminders are configurable.</li>
+          <li>The user can mark the quote as won, make modifications, delay the reminder, among other options.</li>
+          <li>This app was written with support by AI, otherwise this would take exponentially longer to code.</li>
+          <li>If you uninstall the app, all data will be lost unless you export the encrypted backup first and then re-import it.</li>
+        </ul>
+        <p>
+          Every step is designed to be as self-explanatory as possible. If you need to
+          clarify what something is or does, or how to do something in the app, then I
+          need to modify the app to make it clearer.
+        </p>
+      </section>
+
+      <section aria-labelledby="involvement">
+        <h2 id="involvement">Your Involvement</h2>
+        <p>Although the app needs to be tested, there are a few things to clarify:</p>
+        <ul>
+          <li>You do not need to be a Google developer or even be technical. The criteria is that you are willing to test the app.</li>
+          <li>Please report any bugs, corrections, ideas, or confusion with the template below.</li>
+          <li>Please try out a variety of aspects within the app. After selecting UK/US, the order in which you try things should not matter, as it should all flow.</li>
+        </ul>
+        <p>
+          I am more than happy to answer any questions that I may have missed off. This
+          page is to reduce the amount of times I need to type this information out
+          manually.
+        </p>
+      </section>
+
+      <section aria-labelledby="feedback-log">
+        <h2 id="feedback-log">Feedback Log</h2>
+        <p>Keep a dated log in this format:</p>
+        <pre><code>Date:
+Tester (initials):
+Device/Android version:
+Issue:</code></pre>
+      </section>
+
+      <section aria-labelledby="examples">
+        <h2 id="examples">Example Entries</h2>
+        <pre><code>Date: 2026-05-20
+Tester: TA
+Device/Android version: Pixel 6 / Android 14
+Issue: Reminder did not fire when battery saver on.
+
+Date: 2026-05-22
+Tester: CB
+Device/Android version: Samsung A54 / Android 15
+Issue: PDF share sheet empty on first open.</code></pre>
+      </section>
+
+      <section aria-labelledby="limitations">
+        <h2 id="limitations">Intentional Limitations</h2>
+        <p>The following features are not implemented but might come later down the line:</p>
+        <ul>
+          <li>Cloud sync - all data is stored on your device only. This would require a lot more security and a subscription model.</li>
+          <li>Google sign-in - also requires more security.</li>
+          <li>Form auto-fill, such as auto-completing an address - paid subscription only.</li>
+          <li>Language support, other than UK and US - complex, especially with tax.</li>
+          <li>Multiple users - might come with cloud sync.</li>
+          <li>Sending quotes from the app directly - all of the above would be required with the caveats.</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
