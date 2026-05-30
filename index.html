@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quote Forge Privacy Policy</title>
+    <meta
+      name="description"
+      content="Privacy Policy for Quote Forge, an offline-first quote follow-up tool for tradespeople."
+    >
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #f7f7f4;
+        --card: #ffffff;
+        --text: #1f2933;
+        --muted: #52606d;
+        --border: #d9e2ec;
+        --accent: #2563eb;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #101418;
+          --card: #171f27;
+          --text: #f5f7fa;
+          --muted: #cbd2d9;
+          --border: #323f4b;
+          --accent: #60a5fa;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        line-height: 1.6;
+      }
+
+      main {
+        width: min(920px, calc(100% - 32px));
+        margin: 48px auto;
+        padding: clamp(24px, 5vw, 56px);
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 24px;
+        box-shadow: 0 16px 48px rgb(15 23 42 / 0.08);
+      }
+
+      h1,
+      h2 {
+        line-height: 1.2;
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-size: clamp(2rem, 5vw, 3.5rem);
+      }
+
+      h2 {
+        margin-top: 36px;
+        font-size: 1.35rem;
+      }
+
+      p,
+      li {
+        color: var(--muted);
+      }
+
+      strong,
+      code {
+        color: var(--text);
+      }
+
+      code {
+        padding: 0.1rem 0.3rem;
+        border-radius: 0.35rem;
+        background: color-mix(in srgb, var(--border), transparent 45%);
+      }
+
+      a {
+        color: var(--accent);
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 16px 0 8px;
+        overflow: hidden;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+      }
+
+      th,
+      td {
+        padding: 12px 14px;
+        text-align: left;
+        vertical-align: top;
+        border-bottom: 1px solid var(--border);
+      }
+
+      th {
+        color: var(--text);
+        background: color-mix(in srgb, var(--border), transparent 70%);
+      }
+
+      tr:last-child td {
+        border-bottom: 0;
+      }
+
+      .meta {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .summary {
+        margin-top: 28px;
+        padding: 18px 20px;
+        border-left: 4px solid var(--accent);
+        border-radius: 12px;
+        background: color-mix(in srgb, var(--accent), transparent 90%);
+      }
+
+      @media (max-width: 720px) {
+        main {
+          margin: 16px auto;
+          border-radius: 16px;
+        }
+
+        table,
+        thead,
+        tbody,
+        th,
+        td,
+        tr {
+          display: block;
+        }
+
+        thead {
+          display: none;
+        }
+
+        tr {
+          border-bottom: 1px solid var(--border);
+        }
+
+        tr:last-child {
+          border-bottom: 0;
+        }
+
+        td {
+          border-bottom: 0;
+        }
+
+        td::before {
+          content: attr(data-label);
+          display: block;
+          margin-bottom: 4px;
+          color: var(--text);
+          font-weight: 700;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Privacy Policy</h1>
+      <p class="meta"><strong>Last updated:</strong> May 2026</p>
+      <p class="meta"><strong>App:</strong> Quote Forge (package <code>com.jobtrack.jobtrack</code>)</p>
+      <p class="meta">
+        <strong>Contact:</strong>
+        <a href="mailto:query_forge@outlook.com">query_forge@outlook.com</a>
+      </p>
+
+      <section class="summary" aria-labelledby="summary">
+        <h2 id="summary">Summary</h2>
+        <p>
+          Quote Forge is an <strong>offline-first</strong> quote follow-up tool for
+          tradespeople. Your business data (customers, jobs, quotes, settings, and
+          attachments) is stored <strong>locally on your device</strong> unless you choose
+          to export an encrypted backup. We do not operate a hosted sync service in the
+          current version, and your business records are not transmitted to or stored on
+          our servers.
+        </p>
+      </section>
+
+      <section aria-labelledby="data-we-process">
+        <h2 id="data-we-process">Data We Process</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Data</th>
+              <th>Purpose</th>
+              <th>Stored where</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Data">Customer names, phone numbers, emails, addresses, notes</td>
+              <td data-label="Purpose">Quote and follow-up management</td>
+              <td data-label="Stored where">On your device (SQLite)</td>
+            </tr>
+            <tr>
+              <td data-label="Data">Job and quote details, line items, amounts</td>
+              <td data-label="Purpose">Business records</td>
+              <td data-label="Stored where">On your device</td>
+            </tr>
+            <tr>
+              <td data-label="Data">Company logo and quote attachments you add</td>
+              <td data-label="Purpose">Branding and job files</td>
+              <td data-label="Stored where">On your device</td>
+            </tr>
+            <tr>
+              <td data-label="Data">App settings (VAT, reminders, templates)</td>
+              <td data-label="Purpose">App configuration</td>
+              <td data-label="Stored where">On your device</td>
+            </tr>
+            <tr>
+              <td data-label="Data">Encrypted backup files you create</td>
+              <td data-label="Purpose">Data portability between your devices</td>
+              <td data-label="Stored where">Where you save them (clipboard/file - your control)</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section aria-labelledby="data-not-collected">
+        <h2 id="data-not-collected">Data We Do Not Collect (Current Version)</h2>
+        <ul>
+          <li>No cloud account or server-side database for your quotes in v1.</li>
+          <li>No advertising or analytics SDKs in the initial free release.</li>
+          <li>No sale of personal data.</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="permissions">
+        <h2 id="permissions">Permissions</h2>
+        <ul>
+          <li>
+            <strong>Notifications:</strong> Optional reminders for quote follow-ups. You can
+            deny permission; the app still works without scheduled alerts.
+          </li>
+          <li>
+            <strong>Storage / files:</strong> To pick attachments, logos, and open exported
+            PDFs on your device.
+          </li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="google-sign-in">
+        <h2 id="google-sign-in">Google Sign-In (Not Active in v1)</h2>
+        <p>
+          Sign-in UI is disabled for launch. If enabled in a future update, Google would
+          provide account identifiers and email for optional identity features only;
+          business data would remain governed by this policy and any updated sync terms.
+        </p>
+      </section>
+
+      <section aria-labelledby="data-retention">
+        <h2 id="data-retention">Data Retention and Deletion</h2>
+        <ul>
+          <li>Delete customers, quotes, or jobs in the app to remove them from local storage (soft-delete in database).</li>
+          <li>Uninstalling the app removes local app data from the device.</li>
+          <li>Encrypted backups you saved elsewhere are your responsibility to delete.</li>
+        </ul>
+        <p>
+          There is <strong>no online account</strong> in v1, so there is no server-side
+          account deletion URL. If you add cloud sync or sign-in later, you must provide
+          in-app and web-based deletion as required by Google Play.
+        </p>
+      </section>
+
+      <section aria-labelledby="children">
+        <h2 id="children">Children</h2>
+        <p>Quote Forge is a business tool, not directed at children under 13.</p>
+      </section>
+
+      <section aria-labelledby="changes">
+        <h2 id="changes">Changes</h2>
+        <p>
+          We may update this policy when features change (e.g. ads, sync, sign-in). The
+          in-app link will point to the current version.
+        </p>
+      </section>
+
+      <section aria-labelledby="contact">
+        <h2 id="contact">Contact</h2>
+        <p>Email: <a href="mailto:query_forge@outlook.com">query_forge@outlook.com</a></p>
+      </section>
+    </main>
+  </body>
+</html>
